@@ -150,6 +150,23 @@ fun main() {
         ),
         correctResult = false
     )
+    check(
+        name = "When the Sudoku puzzle have numbers that are bigger than it size  the puzzle should return false",
+        result = isValidSudoku(
+            listOf(
+                listOf("10", "3", "-", "-", "7", "-", "-", "-", "-"),
+                listOf("6", "a", "-", "1", "9", "5", "-", "-", "-"),
+                listOf("-", "9", "8", "-", "-", "-", "-", "6", "-"),
+                listOf("8", "-", "-", "-", "6", "-", "-", "-", "3"),
+                listOf("4", "-", "-", "8", "-", "3", "-", "-", "1"),
+                listOf("7", "-", "-", "-", "2", "-", "-", "-", "6"),
+                listOf("-", "6", "-", "-", "-", "-", "2", "8", "-"),
+                listOf("-", "-", "-", "4", "1", "9", "-", "-", "5"),
+                listOf("-", "-", "-", "-", "8", "-", "-", "7", "9")
+            )
+        ),
+        correctResult = false
+    )
 }
 
 /**
